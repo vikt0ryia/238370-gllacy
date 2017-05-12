@@ -51,8 +51,23 @@
                   <input id="search" type="search" placeholder="Что ищем?">
                 </form>
               </div>
-              <div class="main-header__login"><a href="#">Вход</a></div>
-              <div class="main-header__basket"><a href="#">Пусто</a></div>
+              <div class="main-header__login">
+                <a class="main-header__link" href="#">Вход</a>
+                <div class="login-block">
+                  <form class="clearfix" action="https://echo.htmlacademy.ru" method="post">
+                    <input type="text" name="login" placeholder="Электронная почта">
+                    <input type="password" name="password" placeholder="Пароль">
+                    <button class="btn  btn--login-block" type="submit">Войти</button>
+                    <div class="login-block__info-inner">
+                      <a href="#">Забыл пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="main-header__basket">
+                <a class="main-header__link" href="#">Пусто</a>
+              </div>
             </div>
             <div class="main-header__contacts-number">
               <span>С 10 до 20, ежедневно</span>
@@ -177,7 +192,7 @@
             </div>
             <div class="contacts__phone">
               <p>Для заказов по телефону:</p>
-              <p><span>8 812 450-25-25</span></p>
+              <p><a href="tel:+78124502525">8 812 450-25-25</a></p>
               <p>(с 10 до 20 ежедневно)</p>
             </div>
             <a class="btn  btn--contacts" href="#">Форма обратной связи</a>
@@ -215,10 +230,19 @@
           </div>
         </div>
       </footer>
-      
-      
     </div>
   
+    <div class="modal-block">
+      
+      <div class="modal-block-title">Мы обязательно вам ответим!</div>
+      <button class="modal-block-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="message-form  clearfix" action="https://echo.htmlacademy.ru" method="post">
+        <input type="text" name="user-name" placeholder="Как вас зовут?" required>
+        <input type="text" name="user-mail" placeholder="Ваша почта для ответа?" required>
+        <textarea name="message" id="message-field" placeholder="Напишите что-нибудь..."></textarea>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+    </div>
     
   </body>
 </html>
