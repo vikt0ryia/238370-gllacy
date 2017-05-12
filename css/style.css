@@ -575,7 +575,7 @@ tr {
   padding-right: 12px;
 }
 
-.modal-block-close {
+.booking .modal-block-close {
   position: relative;
   top: -5px;
   left: 0px;
@@ -588,8 +588,8 @@ tr {
   cursor: pointer;
 }
 
-.modal-block-close::before,
-.modal-block-close::after {
+.booking .modal-block-close::before,
+.booking .modal-block-close::after {
   content: "";
   position: absolute;
   top: -1px;
@@ -599,12 +599,12 @@ tr {
   background-color: #686867;
 }
 
-.modal-block-close::before {
+.booking .modal-block-close::before {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-.modal-block-close::after  {
+.booking .modal-block-close::after  {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
